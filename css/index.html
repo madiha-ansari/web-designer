@@ -1,21 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+<style>
+  .relative-box {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    background: lightblue;
+    width: 100px;
+    height: 100px;
+  }
 
+  .absolute-box {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background: pink;
+    width: 100px;
+    height: 100px;
+  }
 
-    <!-- rbg value -->
-    <!-- colur piker -->
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea ullam quas odit molestiae, a odio deserunt voluptate magni cumque, rem quidem facilis commodi nemo neque mollitia distinctio. Maiores, repellendus? Reprehenderit?</p>
+  .fixed-box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: orange;
+    width: 100px;
+    height: 100px;
+  }
+</style>
 
-
-    <!-- hex code  -->
-
-
-</body>
-</html>
+<div class="relative-box">Relative</div>
+<div class="absolute-box">Absolute</div>
+<div class="fixed-box">Fixed</div>

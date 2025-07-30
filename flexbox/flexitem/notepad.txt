@@ -1,0 +1,252 @@
+Flex Item Properties
+
+flex-grow
+flex-shrink
+ flex-basis
+flex (shorthand)
+align-self 
+order
+flex
+
+
+
+flex-grow code 
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container {
+      display: flex;
+      border: 2px solid black;
+    }
+
+    .item {
+      background-color: lightblue;
+      padding: 20px;
+      margin: 5px;
+    }
+
+    .item1 {
+      flex-grow: 1;
+    }
+
+    .item2 {
+      flex-grow: 2;
+    }
+
+    .item3 {
+      flex-grow: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+  </div>
+
+</body>
+</html>
+
+
+flex-shrink code 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex Shrink Example</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="item item1">Item 1</div>
+    <div class="item item2">Item 2</div>
+    <div class="item item3">Item 3</div>
+  </div>
+</body>
+</html>
+
+.container {
+  display: flex;
+  width: 400px;
+  background-color: #ddd;
+  gap: 10px;
+}
+
+.item {
+  width: 200px; /* Initial width */
+  height: 100px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+}
+
+/* Shrink values */
+.item1 {
+  flex-shrink: 1;
+  background-color: steelblue;
+}
+
+.item2 {
+  flex-shrink: 2;
+  background-color: seagreen;
+}
+
+.item3 {
+  flex-shrink: 0;
+  background-color: tomato;
+}
+
+ 
+
+ flex-basis code
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex Basis Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="item item1">Item 1</div>
+    <div class="item item2">Item 2</div>
+    <div class="item item3">Item 3</div>
+  </div>
+</body>
+</html>
+
+.container {
+  display: flex;
+  width: 700px;
+  background-color: #f0f0f0;
+  gap: 10px;
+  padding: 10px;
+}
+
+.item {
+  height: 100px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 100px;
+}
+
+/* Different flex-basis values */
+.item1 {
+  flex-basis: 100px;
+  background-color: steelblue;
+}
+
+.item2 {
+  flex-basis: 200px;
+  background-color: seagreen;
+}
+
+.item3 {
+  flex-basis: 300px;
+  background-color: tomato;
+}
+
+
+
+flex (shorthand) 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex Shorthand Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="item item1">Item 1</div>
+    <div class="item item2">Item 2</div>
+    <div class="item item3">Item 3</div>
+  </div>
+</body>
+</html>
+.container {
+  display: flex;
+  width: 600px;
+  background-color: #f5f5f5;
+  gap: 10px;
+  padding: 10px;
+}
+
+.item {
+  height: 100px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  line-height: 100px;
+}
+
+/* Using flex shorthand */
+.item1 {
+  flex: 1 1 100px;   /* grow: 1, shrink: 1, basis: 100px */
+  background-color: steelblue;
+}
+
+.item2 {
+  flex: 2 1 100px;   /* grow: 2, shrink: 1, basis: 100px */
+  background-color: seagreen;
+}
+
+.item3 {
+  flex: 1 2 200px;   /* grow: 1, shrink: 2, basis: 200px */
+  background-color: tomato;
+}
+
+align-self
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Align Self Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="item item1">Start</div>
+    <div class="item item2">Center</div>
+    <div class="item item3">End</div>
+  </div>
+</body>
+</html>
+.container {
+  display: flex;
+  align-items: stretch; /* Default alignment */
+  height: 200px;
+  background-color: #eee;
+  gap: 10px;
+  padding: 10px;
+}
+
+.item {
+  flex: 1;
+  background-color: steelblue;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Individual alignment using align-self */
+.item1 {
+  align-self: flex-start;
+  background-color: seagreen;
+}
+
+.item2 {
+  align-self: center;
+  background-color: tomato;
+}
+
+.item3 {
+  align-self: flex-end;
+  background-color: darkslateblue;
+}

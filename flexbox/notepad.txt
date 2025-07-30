@@ -1,0 +1,55 @@
+Flex Container parent (container)
+Flex Items   inside the container
+
++++++++++++++++ justify 
+
+|
+| align items 
+
+
+
+
+
+
+
+
+
+Flex Container Properties
+
+ flex-direction
+justify-content
+align-items
+flex-wrap
+align-content
+
+
+
+w3 school flex item 
+
+flex-direction
+flex-wrap
+flex-flow
+justify-content
+align-items
+align-content
+
+
+
+
+Flex Item Properties
+
+flex-grow
+flex-shrink
+ flex-basis
+flex (shorthand)
+align-self
+
+
+w3 school flex item 
+
+order
+flex-grow
+flex-shrink
+flex-basis
+flex
+align-self

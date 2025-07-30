@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background-color: #eee;
+}
+
+.item {
+  padding: 20px;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+
+/* Set different orders */
+.item1 {
+  order: 2; /* appear 2nd */
+  background-color: steelblue;
+}
+
+.item2 {
+  order: 1; /* appear 1st */
+  background-color: seagreen;
+}
+
+.item3 {
+  order: 3; /* appear 3rd */
+  background-color: tomato;
+}

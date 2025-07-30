@@ -1,0 +1,84 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* y axis vertical */
+.container{
+    background-color: gray;
+    border: 4px groove black;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    align-items: center;
+}
+
+.one{
+    background-color: blue;
+}
+
+.two{
+    background-color: greenyellow;
+}
+
+
+.three{
+    background-color: brown;
+}
+
+.four{
+    background-color: palevioletred;
+}
+
+
+
+
+
+
+/* x axis horizontal */
+ /* .container{
+    background-color: gray;
+    border: 4px groove black;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content:;
+    gap: 4em;
+}
+
+.one{
+    background-color: blue;
+}
+
+.two{
+    background-color: greenyellow;
+}
+
+
+.three{
+    background-color: brown;
+}
+
+.four{
+    background-color: palevioletred;
+}
+  */
