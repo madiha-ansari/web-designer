@@ -1,0 +1,40 @@
+/* gap */
+
+/* .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; */
+  /* gap: 20px; 20px space between both rows and columns */
+/* }
+.item {
+  background-color: lightgreen;
+  padding: 20px;
+  text-align: center;
+} */
+
+
+
+/* row gap */
+/* .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; */
+  /* row-gap: 90px; Only vertical space */
+/* }
+.item {
+  background-color: lightgreen;
+  padding: 20px;
+  text-align: center;
+} */
+
+
+
+/* col gap */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px; /* Only horizontal space */
+}
+.item {
+  background-color: lightgreen;
+  padding: 20px;
+  text-align: center;
+}

@@ -1,0 +1,12 @@
+.container {
+  display: grid;
+  grid-template-columns: 100px 300px 100px;
+  gap: 10px;
+}
+.item {
+  background: lightblue;
+  padding: 20px;
+  text-align: center;
+}
+
+/* isma hum batta ha ka hama kitna colum cahiya */

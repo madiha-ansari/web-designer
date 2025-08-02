@@ -1,4 +1,4 @@
-grid-container property
+grid-container property parent container
 
 display: grid;
 grid-template-columns
@@ -10,7 +10,7 @@ grid-template-areas
 grid-auto-rows: 100px;
 
 
-Grid Item Properties 
+Grid Item insite the container
 
 grid-column-start
 grid-column-end
@@ -24,3 +24,38 @@ align-self
 place-self (shorthand for justify-self + align-self)
 z-index (for layering)
 order
+
+
+
+
+
+
+✅ Grid Container (Parent) Properties:
+
+| Property                       | Explanation                                                                     |
+| ------------------------------ | ------------------------------------------------------------------------------- |
+| `display: grid;`               | Grid system activate karta hai                                                  |
+| `grid-template-columns`        | Columns define karta hai (e.g. `1fr 1fr`)                                       |
+| `grid-template-rows`           | Rows define karta hai (e.g. `100px 200px`)                                      |
+| `gap`, `row-gap`, `column-gap` | Grid items ke beech spacing                                                     |
+| `justify-content`              | Grid ko horizontal axis par align karta hai (e.g. start, center, space-between) |
+| `align-content`                | Grid ko vertical axis par align karta hai                                       |
+| `grid-template-areas`          | Named areas banane ke liye (visual layout)                                      |
+| `grid-auto-rows`               | Automatically created rows ke height set karta hai (e.g. `100px`)               |
+
+
+✅ Grid Items (Child) Properties:
+| Property                  | Explanation                                       |
+| ------------------------- | ------------------------------------------------- |
+| `grid-column-start`       | Kis column se item start karega                   |
+| `grid-column-end`         | Kis column pe item khatam hoga                    |
+| `grid-row-start`          | Kis row se item start karega                      |
+| `grid-row-end`            | Kis row pe item khatam hoga                       |
+| `grid-column` (shorthand) | e.g. `grid-column: 1 / 3;` (start / end)          |
+| `grid-row` (shorthand)    | e.g. `grid-row: 2 / 4;`                           |
+| `grid-area`               | Grid template area name ya shorthand (row/column) |
+| `justify-self`            | Horizontal alignment of **individual item**       |
+| `align-self`              | Vertical alignment of **individual item**         |
+| `place-self`              | Shorthand for `justify-self` + `align-self`       |
+| `z-index`                 | Layering – kis item upar ya neeche dikhna chahiye |
+| `order`                   | Grid mein visual order change karne ke liye       |

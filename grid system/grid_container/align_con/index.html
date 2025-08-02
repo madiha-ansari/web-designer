@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .container {
+      display: grid;
+      grid-template-rows: 50px 50px;
+      grid-template-columns: 1fr;
+      align-content: center; /* Try changing this! */
+      gap: 10px;
+      border: 2px dashed gray;
+      height: 300px; /* Extra height */
+    }
+    .item {
+      background-color: lightseagreen;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+    </div>
+  </body>
+</html>
